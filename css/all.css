@@ -1,4 +1,13 @@
 /*for all screens*/
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    background-color: #BD7F37FF;
+    /*color: #A13941FF;*/
+    color: #000;
+    font-family: lato;
+    font-size: 21px;
+}
 
 #skyline  {
     border: 1px solid #000;
@@ -11,7 +20,7 @@
 
 figure p {
     font-weight: bold;
-    color: #ea6737;
+    color: #BD7F37FF;
     background-color: transparent;
     text-align: center;
     font-weight: bold;
