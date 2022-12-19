@@ -86,7 +86,7 @@ div#skyline {
     color: #fdfdfd;
     text-align: center;
     height: 6rem;
-    padding: 2.5rem;
+    padding: 1.5rem;
     border-radius: 1rem;
     font-size: 1.4rem;
     box-shadow: rgb(0, 0, 0) 1px 1px 20px 0 inset ;
@@ -177,3 +177,10 @@ caption{
     font-size: .9rem;
     text-align: left;
     border-top:  1px solid #87a933;}
+
+span ul {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.rechts {text-align: right}
