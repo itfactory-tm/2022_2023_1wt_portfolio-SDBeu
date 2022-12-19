@@ -55,11 +55,7 @@ nav li {
 
 nav li:hover{
     background-color: #87a933;
-    border-radius: 8px;
-
-    /*padding-left: 2px;*/
-    /*padding-right: 2px;*/
-}
+    border-radius: 8px;}
 
 section {
     background-color: #333538;
@@ -106,8 +102,7 @@ h1, h2 {
 
 h3 {text-align: right;
     margin: 1rem;
-    margin-bottom: 0;
-}
+    margin-bottom: 0;}
 
 nav h2{
     display: none;}
@@ -119,8 +114,14 @@ table {
 th{
     text-transform: uppercase;}
 
-td, th {border: 2px solid #79a51b;
-        width: 450px;}
+
+
+td, th {border: 1px solid #87a933;
+        width: 450px; }
+
+.center{
+    text-align: center;
+}
 
 li {list-style-type: "✓ ";
     list-style-position: inside;
@@ -145,9 +146,34 @@ img{
     margin: 1rem;
     outline: rgb(10, 10, 10) double  1px ;}
 
+.kader {
+    border: 1px solid rgba(23, 22, 22, .5);
+    background-color: #efebeb;
+    border-radius: 0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    width: 200px;
+    height: 300px;
+    padding: 1.5rem;
+    margin: 0;
+    outline: none;}
+
+p{line-height: 1.5rem;
+    margin: .5rem;}
+
 footer{
     font-weight: bold;
     text-align: right;
     margin-top: 2rem;
-    line-height: 1rem;
     font-size: .8rem;}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    line-height: 0;}
+
+caption{
+    caption-side: bottom;
+    margin-top: 1rem;
+    font-size: .9rem;
+    text-align: left;
+    border-top:  1px solid #87a933;}
