@@ -1,71 +1,140 @@
-/*for all screens*/
- @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
-header {
-    display: block;
-    position: relative;
-    text-align: left;
-}
+/*all screens*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
 
-header h1 {
-    font-size: 2.3em;
-    text-transform: none;
-    letter-spacing: 0em;
-    text-align: center;
-}
+*::selection {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: #f65a03;}
+
+html{
+    font-size: 18px;}
+
+main{ max-width: 900px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 6px rgb(51, 53, 56);
+    background-repeat: no-repeat;
+    background-position: right 40px;
+    text-shadow: rgba(0, 0, 0, 0.4) .1px .1px .5px;}
+
+body{
+    font-family: Consolas, Monaco, sans-serif;
+    line-height: 1.5rem;
+    background:
+            radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0 10px,
+            radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),
+            #8a3;
+    background-size: 20px 20px;}
 
 nav {
     text-align: center;
     display: block;
-}
+    border-bottom: 0.8rem  solid;
+    color: #f65a03;}
 
 nav ul {
-    padding: 0px;
+    padding: 0;
     list-style-type: none;
-    display: inline;
-}
+    display: inline;}
 
 nav li {
-    margin: 0px 10px;
-    padding: 0px;
+    margin: 0 10px;
+    padding: 0;
     list-style-type: none;
-    display: inline;
-}
+    display: inline;}
 
-body {
-    background-color: #BD7F37FF;
-    color: #A13941FF;
-    color: #000;
-    font-family: lato;
-    font-size: 21px;
-}
+section {
+    background-color: #333538;
+    padding: 2rem;
+    padding-top: .5rem;
+    margin: 1.5rem;
+    color: #fdfdfd;
+    outline: rgb(10, 10, 10) dashed 1px ;
+    box-shadow: rgb(0, 0, 0) 1px 1px 10px 0 inset ;
+    background-image: url(../pictures/vlieger.png);
+    background-repeat: no-repeat;
+    background-position: right;}
 
-#skyline  {
-    border: 1px solid #000;
+figure{  background-color: #333538;
+    padding: 2rem;
+    padding-top: .5rem;
+    margin: 1rem;
+    color: #fdfdfd;
+    outline: rgb(10, 10, 10) double 1px ;
+    box-shadow: rgb(0, 0, 0) 1px 1px 10px 0 inset ;    }
+
+figure#skyline {
     background-image: url(../pictures/voetgangersbrug.jpg);
-    background-position: top center;
-    background-repeat: repeat-y;
-    color: blue;
-    background-color: black;
-}
-
-figure p {
-    font-weight: bold;
-    color: #BD7F37FF;
-    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fdfdfd;
     text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    }
+    height: 6rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;}
 
-figcaption {
-    background-color: #884c4c;
-    color: #000;
-    padding: 10px;
-    width: 300px;
+h1 {text-align: center; }
+
+h1, h2 {
+    color: #f65a03;
+    padding: .5rem;
+    margin-bottom: .5rem;}
+
+h3 {text-align: right;
+    margin: 1rem;
+    margin-bottom: 0;
 }
 
-h1 {
-    background-color: #000;
-    color: #A13941FF;
-    text-align: center}
+nav h2{
+    display: none;}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #87a933;}
+
+th{
+    text-transform: uppercase;}
+
+td, th {border: 2px solid #79a51b;
+        width: 450px;}
+
+li {list-style-type: "✓ ";
+    list-style-position: inside;
+    line-height: 1.5rem;
+    padding-left: 1rem;}
+li:hover{
+    color: #a2968f;}
+
+ul{
+    padding-left: 1rem;}
+
+img{
+    background-color: #fdfdfd;
+    border-radius: 50%;
+    box-shadow: .5rem .5rem .6rem rgba(150,150,150,.5);
+    width: 150px;
+    height:150px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    margin: 1rem;
+    outline: rgb(10, 10, 10) double  1px ;}
+
+footer{
+    font-weight: bold;
+    text-align: right;
+    margin-top: 2rem;
+    line-height: 1rem;
+    font-size: .8rem;}
