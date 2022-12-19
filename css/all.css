@@ -169,7 +169,7 @@ footer{
 footer p {
     margin: 0;
     padding: 0;
-    line-height: 0;}
+    line-height: 1rem;}
 
 caption{
     caption-side: bottom;
