@@ -1,5 +1,8 @@
 
 /*all screens*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
 *{
     margin: 0;
     padding: 0;
@@ -15,27 +18,34 @@
 html{
     font-size: 18px;}
 
-main{ max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+.topbar {
+    position: sticky !important; ;
+    top: 0.5rem  !important;
+    width: 100%;
     background-color: #ffffff;
-    padding: 25px;
-    border-radius: 25px;
-    box-shadow: 6px 6px 6px rgb(51, 53, 56);
-    background-repeat: no-repeat;
-    background-position: right 40px;
-    text-shadow: rgba(0, 0, 0, 0.4) .1px .1px .5px;}
+}
 
 body{
     font-family: Consolas, Monaco, sans-serif;
     line-height: 1.5rem;
     background:
-            radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0 10px,
-            radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),
+            radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 0.4rem, rgba(96, 16, 48, 0) 11px) 0 0.4rem,
+            radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #613 0.4rem, rgba(96, 16, 48, 0) 11px),
             #8a3;
     background-size: 20px 20px;}
 
+main{ max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    background-color: #ffffff;
+    padding: 1.4rem;
+    border-radius: 1.4rem;
+    box-shadow: 6px 6px 6px rgb(51, 53, 56);
+
+    background-repeat: no-repeat;
+    background-position: right 40px;
+    text-shadow: rgba(0, 0, 0, 0.4) .1px .1px .5px;}
 
 nav {
     text-align: center;
@@ -44,20 +54,27 @@ nav {
     color: #f65a03;}
 
 nav ul {
-    padding: 0;
+    padding: 0 !important;
     list-style-type: none;
-    display: inline;}
+    display: inline-block;
+    /*line-height: 1rem !important;*/
+}
 
 nav li {
-    margin: 0 10px;
-    padding: 0;
+    margin: 0;
     list-style-type: none;
-    display: inline;}
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    line-height: 1rem ;
+    padding-top: 0.2rem ;
+    padding-bottom: .2rem;
+
+}
 
 nav li:hover{
     background-color: #87a933;
-    border-radius: 8px;
-    /*border-top:  3px solid #f55a03;*/
+    border-radius: 0.5rem;
     }
 
 
@@ -67,7 +84,7 @@ section {
     padding-top: .5rem;
     margin: 1.5rem;
     color: #fdfdfd;
-    box-shadow: rgb(0, 0, 0) 1px 1px 10px 0 inset ;
+    box-shadow: rgb(0, 0, 0) 1px 1px 0.4rem 0 inset ;
     background-image: url(../pictures/vlieger.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -82,14 +99,16 @@ figure{  background-color: #333538;
     padding: 2rem;
     padding-top: .5rem;
     color: #fdfdfd;
-    box-shadow: rgb(0, 0, 0) 1px 1px 10px 0 inset ;
-    width: 268px;
+    box-shadow: rgb(0, 0, 0) 1px 1px 0.4rem 0 inset ;
+    width: 32%;
     margin: 1rem auto;
-    outline: 10px solid rgba(255, 255, 255, 0.39);
-    outline-offset: -1rem;}
+    margin-top: 0;
+    outline: 0.4rem solid rgba(255, 255, 255, 0.39);
+    outline-offset: -1rem;
+}
 
 figcaption{
-    text-align: justify-all;
+    text-align: justify;
 }
 
 div#skyline {
@@ -115,53 +134,90 @@ h1, h2 {
 
 h3 {text-align: center;
     margin-top:  1rem;
-    margin-bottom: 0;
-    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
     font-weight: bold;
-    color: #87a933;}
+    color: #87a933;
+    background-color: rgba(255, 255, 255, 0.06);
+border-radius: 1rem}
 
 nav h2{
     display: none;}
 
 table {
+    width: 100%;
     border-collapse: collapse;
     border: 2px solid #87a933;}
+
+
+.center{
+    text-align: center;}
+
+.hoofdinglinks{
+    text-align: left;
+    width: 50%;
+    background-color: rgba(94, 86, 86, 0.94);
+}
+.rechts {text-align: right}
 
 th{
     text-transform: uppercase;}
 
-
-
 td, th {border: 1px solid #87a933;
-        width: 450px;
     }
 
-.center{
-    text-align: center;
+th{
+    text-align: left;
+    padding-left:  1rem;
+    padding-right: 1rem;
+}
+
+#lift {
+    background-image: url(../pictures/lift.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+th i {
+    display: inline;
+    width: 2rem;
+    text-align: right;
+    margin-right: auto;
+    margin-left: 1rem;
 }
 
 li {list-style-type: "✓ ";
     list-style-position: inside;
     line-height: 1.5rem;
     padding-left: 1rem;}
+
 li:hover{
     color: #a2968f;}
 
 ul{
     padding-left: 1rem;}
 
+ul:first-child{
+    padding-top: .5rem;
+}
+ul:last-child{
+    padding-bottom: .5rem;}
+
 img{
     background-color: #fdfdfd;
     border-radius: 50%;
     box-shadow: .5rem .5rem .6rem rgba(150,150,150,.5);
-    width: 150px;
-    height:150px;
+    width: 100%;
+    height:100%;
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 2rem;
-    margin: 1rem;
-    outline: rgb(10, 10, 10) double  1px ;}
+    margin: 1rem auto;
+    outline: rgb(10, 10, 10) double  1px ;
+    display: block;
+}
 
 .kader {
     border: 1px solid rgba(23, 22, 22, .5);
@@ -178,6 +234,10 @@ img{
     font-weight: bold;
     color: #ea6737;
 }
+
+.imgklein{
+       width: 35%;
+       height: 35%;}
 
 p{line-height: 1.5rem;
     margin: .5rem;}
@@ -205,4 +265,96 @@ span ul {
     margin-bottom: 1.5rem;
 }
 
-.rechts {text-align: right}
+.bezet {
+    background-color: rgba(255, 19, 19, 0.33);
+}
+
+.vrij {
+    background-color: rgba(85, 115, 8, 0.33);
+}
+
+.soortkamerfout {
+    display: none;
+}
+
+
+@media all and (max-width: 1036px) {
+
+    body{
+        min-width: 640px;
+        background:
+                radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #87a933 0.4rem, rgba(96, 16, 48, 0) 11px) 0 0.4rem,
+                radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #87a933 0.4rem, rgba(96, 16, 48, 0) 11px),
+                #692833;
+        background-size: 20px 20px;
+    }
+
+    main{max-width: 640px}
+
+    figure{
+        display: inline-block;
+        width: 100%;
+    }
+
+    img {
+        width: 30%;
+        height: 30%;
+    }
+
+    html{
+        font-size: 16px;}
+
+}
+
+@media all and (max-width: 640px) {
+
+    body{
+        min-width: 400px;
+         }
+
+    main{max-width: 640px;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        background-color: #f65a03;
+    }
+
+    h1 {
+        color: #000000;
+        padding-bottom: 0;
+        background-color: #fff;
+    }
+    
+    section {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+img {
+    display: none;}
+
+    html{
+        font-size: 14px;}
+
+    div#skyline {
+        border-radius: 0;
+        margin: 0 auto;
+        padding: 0.2rem;
+    }
+
+    footer {display: none}
+    
+    nav {
+        background-color: #f25a03;
+        border-bottom: 0;
+    }
+
+    .foto{
+        display: inline;
+        width: 25%;
+        height: 25%;
+    }
+
+}
