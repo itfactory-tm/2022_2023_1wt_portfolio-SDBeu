@@ -2,7 +2,7 @@
 /*all screens*/
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -19,9 +19,13 @@ html{
     font-size: 18px;}
 
 .topbar {
+    display: block;
     position: sticky !important; ;
-    top: 0.5rem  !important;
+    top: 0  !important;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
     background-color: #ffffff;
 }
 
@@ -34,7 +38,8 @@ body{
             #8a3;
     background-size: 20px 20px;}
 
-main{ max-width: 1000px;
+main{
+    max-width: 1000px;
     margin: 0 auto;
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
@@ -114,6 +119,7 @@ figcaption{
 div#skyline {
     background-image: url(../pictures/voetgangersbrug.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     color: #ffffff;
     text-align: center;
@@ -122,10 +128,14 @@ div#skyline {
     border-radius: 1rem;
     font-size: 1.4rem;
     box-shadow: rgb(0, 0, 0) 1px 1px 20px 0 inset ;
-    margin: 1rem auto;}
+    max-width: 100%;
+    margin: 0rem auto;}
 
+h1, h2, h3 {
+    font-family: Josefin Sans, Consolas, sans-serif;
+}
 
-h1 {text-align: center; }
+h1 {text-align: center;}
 
 h1, h2 {
     color: #f65a03;
@@ -176,6 +186,7 @@ th{
     background-image: url(../pictures/lift.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top left;
 }
 
 
@@ -208,8 +219,8 @@ img{
     background-color: #fdfdfd;
     border-radius: 50%;
     box-shadow: .5rem .5rem .6rem rgba(150,150,150,.5);
-    width: 100%;
-    height:100%;
+    max-width: 100%;
+    height:auto;
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -237,7 +248,17 @@ img{
 
 .imgklein{
        width: 35%;
-       height: 35%;}
+       height: auto;
+    margin-right: 2rem;}
+
+.floatLeft{
+    float: left;
+}
+
+.floatRight{
+    float: right;
+}
+
 
 p{line-height: 1.5rem;
     margin: .5rem;}
@@ -277,7 +298,19 @@ span ul {
     display: none;
 }
 
+.clearFloat{
+    clear: both;
+}
 
+div.floatRight {
+    border: 1px solid #fdfdfd;
+    padding-right: 1.5rem;
+    margin-left: 1.5rem ;
+    margin-bottom: .5rem;
+    box-shadow: 1px 1px 3px rgba(10, 10, 10, 0.71);
+}
+
+/*Medium*/
 @media all and (max-width: 1036px) {
 
     body{
@@ -298,29 +331,36 @@ span ul {
 
     img {
         width: 30%;
-        height: 30%;
+        height: auto;
     }
 
     html{
         font-size: 16px;}
 
+    .clearFloatMedium {
+        clear: both;
+    }
+
 }
 
+/*klein*/
 @media all and (max-width: 640px) {
 
+    html{
+        font-size: 14px;}
     body{
+        font-family: Consolas, Monaco, sans-serif;
         min-width: 400px;
          }
 
     main{max-width: 640px;
         border-radius: 0;
         margin: 0;
-        padding: 0;
-        background-color: #f65a03;
+        padding: .5rem;
+        background-color: #fdfdfd;
     }
 
-    h1 {
-        color: #000000;
+    h1 {color: #000000;
         padding-bottom: 0;
         background-color: #fff;
     }
@@ -330,13 +370,15 @@ span ul {
         margin-right: 0;
         margin-top: 1px;
         margin-bottom: 1px;
+        box-shadow: none;
     }
 
-img {
-    display: none;}
+    img {
+        display: none;}
 
-    html{
-        font-size: 14px;}
+    figcaption{
+        text-align: left;
+    }
 
     div#skyline {
         border-radius: 0;
@@ -347,14 +389,18 @@ img {
     footer {display: none}
     
     nav {
-        background-color: #f25a03;
+        background-color: #fdfdfd;
         border-bottom: 0;
     }
 
     .foto{
         display: inline;
         width: 25%;
-        height: 25%;
+        height: auto;
+    }
+
+    .clearFloatMedium {
+        clear: none;
     }
 
 }
