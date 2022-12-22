@@ -1,8 +1,8 @@
-
 /*all screens*/
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -74,12 +74,10 @@ nav li {
     padding-bottom: .2rem;
 
 }
-
 nav li:hover{
     background-color: #87a933;
     border-radius: 0.5rem;
     }
-
 
 section {
     background-color: #333538;
@@ -87,7 +85,7 @@ section {
     padding-top: .5rem;
     margin: 1.5rem;
     color: #fdfdfd;
-    box-shadow: rgb(0, 0, 0) 1px 1px 0.4rem 0 inset ;
+    box-shadow:  1px 1px 0.4rem 0  rgb(0, 0, 0);
     background-image: url(../pictures/vlieger.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -102,7 +100,8 @@ figure{  background-color: #333538;
     padding: 2rem;
     padding-top: .5rem;
     color: #fdfdfd;
-    box-shadow: rgb(0, 0, 0) 1px 1px 0.4rem 0 inset ;
+    box-shadow: rgb(0, 0, 0) 1px 1px 0.4rem 0;
+    background-color: rgba(51, 53, 56, 0.6);
     width: 32%;
     margin: 1rem auto;
     margin-top: 0;
@@ -127,7 +126,7 @@ div#skyline {
     font-size: 1.4rem;
     box-shadow: rgb(0, 0, 0) 1px 1px 20px 0 inset ;
     max-width: 100%;
-    margin: 0rem auto;}
+    margin: 0 auto;}
 
 h1, h2, h3 {
     font-family: Josefin Sans, Consolas, sans-serif;
@@ -147,7 +146,7 @@ h3 {text-align: center;
     font-weight: bold;
     color: #87a933;
     background-color: rgba(255, 255, 255, 0.06);
-border-radius: 1rem}
+    border-radius: 1rem}
 
 nav h2{
     display: none;}
@@ -155,8 +154,12 @@ nav h2{
 table {
     width: 100%;
     border-collapse: collapse;
-    border: 2px solid #87a933;}
-
+    border: 2px solid #87a933;
+    background-color: rgba(51, 53, 56, 0.6);
+}
+.bgcBeschikbaarheden{
+    background-color: rgba(255, 255, 255, 0);
+}
 
 .center{
     text-align: center;}
@@ -187,7 +190,6 @@ th{
     background-position: top left;
 }
 
-
 th i {
     display: inline;
     width: 2rem;
@@ -216,7 +218,7 @@ ul:last-child{
 img{
     background-color: #fdfdfd;
     border-radius: 50%;
-    box-shadow: .5rem .5rem .6rem rgba(150,150,150,.5);
+    box-shadow: .2rem .3rem .6rem rgba(150,150,150,.5);
     max-width: 100%;
     height:auto;
     padding-top: 1rem;
@@ -227,6 +229,31 @@ img{
     outline: rgb(10, 10, 10) double  1px ;
     display: block;
 }
+
+
+h1 {
+    position: relative;
+    top:0;
+    margin: 0;
+    padding: 1rem;
+}
+#muts{
+    display: inline-block;
+    box-shadow: none;
+    outline: none;
+    max-width: 80px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border-radius: 50% 50% 50% 50%;
+    position:absolute;
+    top:1.6rem;
+    left: 880px;
+    }
+
+
+
+
 
 .kader {
     border: 1px solid rgba(23, 22, 22, .5);
@@ -256,7 +283,6 @@ img{
 .floatRight{
     float: right;
 }
-
 
 p{line-height: 1.5rem;
     margin: .5rem;}
@@ -339,6 +365,25 @@ div.floatRight {
         clear: both;
     }
 
+
+    #muts{
+        display: inline-block;
+        box-shadow: none;
+        outline: none;
+        max-width: 60px;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        border-radius: 50% 50% 50% 50%;
+        position:absolute;
+        top:2rem;
+        left: 541px;
+    }
+
+
+
+
+
 }
 
 /*klein*/
@@ -359,10 +404,27 @@ div.floatRight {
     }
 
     h1 {color: #000000;
-        padding-bottom: 0;
+        padding-bottom: .5rem;
         background-color: #fff;
     }
-    
+
+    #muts{
+        display: inline-block;
+        box-shadow: none;
+        outline: none;
+        max-width: 50px;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        border-radius: 50% 50% 50% 50%;
+        position:absolute;
+        top:1.7rem;
+        left: -10px;
+        float: right;
+    }
+
+
+
     section {
         margin-left: 0;
         margin-right: 0;
@@ -381,7 +443,7 @@ div.floatRight {
     div#skyline {
         border-radius: 0;
         margin: 0 auto;
-        padding: 0.2rem;
+        padding: 0.5rem;
     }
 
     footer {display: none}
