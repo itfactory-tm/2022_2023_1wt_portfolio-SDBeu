@@ -60,9 +60,7 @@ nav {
 
 nav ul {
     padding: 0 !important;
-    list-style-type: none;
     display: inline-block;
-    /*line-height: 1rem !important;*/
 }
 
 nav li {
