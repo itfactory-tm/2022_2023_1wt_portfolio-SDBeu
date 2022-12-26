@@ -129,7 +129,7 @@ section a{
     color: #87a933;
 }
 
-div.container{
+div.containerStijn{
     display: flex;
 }
 
@@ -193,6 +193,7 @@ h1, h2, h3 {
 h1 {text-align: center;
     text-shadow: 1px 1px 2px    black;
     letter-spacing: .3rem;
+    text-transform: uppercase;
 }
 
 h1, h2 {
@@ -238,7 +239,7 @@ table {
 th{
     text-transform: uppercase;}
 
-td, th {border: 1px solid #c7d99b;
+td, th, col, colgroup,tr {border: 1px solid #c7d99b;
     }
 
 th{
@@ -353,6 +354,9 @@ h1 {
     float: right;
 }
 
+.printzichtbaar{
+    display: none;}
+
 p{line-height: 1.5rem;
     margin: .5rem;}
 
@@ -432,7 +436,7 @@ div.floatRight {
 }
 
 /*Medium*/
-@media all and (max-width: 1036px) {
+@media (max-width: 1036px) {
 
     body{
         min-width: 640px;
@@ -451,7 +455,9 @@ div.floatRight {
         width: 100%;
     }
 
-   .container{flex-direction: column}
+   .containerStijn{flex-direction: column;
+   }
+
 
     img {
         width: 30%;
@@ -486,7 +492,7 @@ div.floatRight {
 }
 
 /*klein*/
-@media all and (max-width: 640px) {
+@media (max-width: 640px) {
 
     html{
         font-size: 14px;}
@@ -553,3 +559,34 @@ div.floatRight {
 
 }
 
+@media print{
+
+    section, main, body, figure{
+        height: unset;
+        overflow: unset;
+        border: unset;
+        border-radius: unset;
+        box-shadow: unset;
+        margin: 1rem;
+        padding: 0;
+        color: black;
+        text-align: left;
+    }
+
+    nav, footer, div#skyline, img, .printweg, .mail{
+        display: none;}
+
+    .bezet{
+        display: none;
+    }
+    
+    #contact{
+        display: block;}
+    .printzichtbaar {
+        display: inline-block;
+        color: #000;}
+    
+    .clearFloatMedium{
+        clear: unset;
+    }
+}
