@@ -13,6 +13,10 @@
     color: white;
     background-color: #f65a03;}
 
+nav a:visited{
+    color: #613;
+}
+
 html{
     font-size: 18px;}
 
@@ -21,6 +25,10 @@ html{
     top: 0  ;
     background-color: #ffffff;
 }
+
+nav.topbar ul{
+    padding: 0 ;
+    margin: 0 ;}
 
 body{
     font-family: Consolas, Monaco, sans-serif;
@@ -45,7 +53,7 @@ main{
     background-position: right 40px;
     text-shadow: rgba(0, 0, 0, 0.4) .1px .1px .5px;}
 
-.active {
+.actieve {
     background-color: #87a933;
     border-radius: 0;
     border-right: 1px solid #f65a03;
@@ -92,7 +100,7 @@ nav li:hover{
     border: none;
     }
 
-nav li.active:hover{
+nav li.actieve:hover{
     background-color: #87a933;
     border-radius: 0;
     border-right: 1px solid #f65a03;
@@ -100,16 +108,16 @@ nav li.active:hover{
 
 }
 
-nav li.active a{
+nav li.actieve a{
     text-decoration: none;
     /*text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);*/
 }
 
-nav li.active a:hover{
+nav li.actieve a:hover{
     cursor: default;
 }
 
-nav li.active a:visited {
+nav li.actieve a:visited {
     color: #ffffff;
 }
 
@@ -266,7 +274,14 @@ th i {
  li {list-style-type: "✓ ";
     list-style-position: inside;
     line-height: 1.5rem;
-    padding-left: 1rem;}
+    padding-left: .5rem;
+     padding-right: .5rem;}
+
+
+
+ ul{
+     padding-left: 1rem;
+ }
 
 li:hover{
     color: #a2968f;}
@@ -274,31 +289,69 @@ li:hover{
 td ul{
     padding-left: 1rem;}
 
+
 td ul:first-child{
     padding-top: .5rem;
 }
-td ul:last-child{
-    padding-bottom: .5rem;}
+
+ul {
+    margin-bottom: 0.5rem;
+}
 
 td li{
     padding-left: 1rem;
 }
 
-img{
+
+img.ei {
     background-color: #fdfdfd;
     border-radius: 50%;
-    box-shadow: .2rem .3rem .6rem rgba(150,150,150,.5);
+    box-shadow: .2rem .3rem .6rem rgba(150, 150, 150, .5);
     max-width: 100%;
-    height:auto;
+    height: auto;
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 2rem;
     margin: 1rem auto;
-    outline: rgb(10, 10, 10) double  1px ;
+    outline: rgb(10, 10, 10) double 1px;
     display: block;
 }
 
+.fotosL {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 3px inset #c7d99b;
+    box-shadow: 2px 2px 5px 0 #666;
+}
+
+
+.fotos {
+    max-width: 150px;
+    height: 150px ;
+    object-fit: cover;
+    padding:1rem;
+    margin: .5rem;
+    background-color: #fff;
+    border: 3px inset #c7d99b;
+    box-shadow: 2px 2px 5px 0 #666;
+    filter: grayscale(80%);
+}
+
+.fotos:hover {
+    /*max-width: 160px;*/
+    /*height: 160px;*/
+    /*object-fit: cover; */
+    filter: grayscale(0%);
+    /*transition-duration: 1s;*/
+    border: 3px inset #f65a03;
+}
+
+#kamer6 {
+    object-fit: cover;
+    object-position: top center;
+}
 
 h1 {
     position: relative;
@@ -316,8 +369,9 @@ h1 {
     margin: 0;
     border-radius: 50% 50% 50% 50%;
     position:absolute;
-    top:1.6rem;
+    top:57px;
     left: 880px;
+    background-color: #fff;
     }
 
 
@@ -338,12 +392,11 @@ h1 {
 }
 
 .imgklein{
-       width: 35%;
+       max-width: 43%;
        height: auto;
     margin-right: 2rem;
+    margin-bottom: 1rem;
     }
-
-
 
 
 .floatLeft{
@@ -405,8 +458,12 @@ div.floatRight {
     margin-left: 1.5rem ;
     margin-bottom: .5rem;
     box-shadow: 1px 1px 3px rgba(10, 10, 10, 0.71);
+    max-width: 43%;
 }
 
+div.floatRight ul li:first-child {
+    padding-top: .5rem;
+}
 #contact{
     display: flex;
     justify-content: center;
@@ -436,10 +493,9 @@ div.floatRight {
 }
 
 /*Medium*/
-@media (max-width: 1036px) {
+@media (max-width: 1200px) {
 
     body{
-        min-width: 640px;
         background:
                 radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #87a933 0.4rem, rgba(96, 16, 48, 0) 11px) 0 0.4rem,
                 radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, #87a933 0.4rem, rgba(96, 16, 48, 0) 11px),
@@ -447,7 +503,9 @@ div.floatRight {
         background-size: 20px 20px;
     }
 
-    main{max-width: 640px}
+    main{max-width: 768px
+        }
+
 
 
     figure{
@@ -457,12 +515,6 @@ div.floatRight {
 
    .containerStijn{flex-direction: column;
    }
-
-
-    img {
-        width: 30%;
-        height: auto;
-    }
 
     html{
         font-size: 16px;}
@@ -482,26 +534,35 @@ div.floatRight {
         margin: 0;
         border-radius: 50% 50% 50% 50%;
         position:absolute;
-        top:2rem;
-        left: 541px;
+        top:50px;
+        left: 93%;
     }
-
-
 
 
 }
 
+
+@media (max-width: 660px) {
+    .fotos{
+        max-width: 130px;
+        max-height: 130px;
+    }
+
+    section{
+        margin-right: 0;}
+}
+
 /*klein*/
-@media (max-width: 640px) {
+@media (max-width: 576px) {
 
     html{
         font-size: 14px;}
     body{
         font-family: Consolas, Monaco, sans-serif;
-        min-width: 400px;
+        min-width: 420px;
          }
 
-    main{max-width: 640px;
+    main{max-width: 576px;
         border-radius: 0;
         margin: 0;
         padding: .5rem;
@@ -516,7 +577,7 @@ div.floatRight {
     }
 
     #muts{
-        top: 10px;                ;
+        top: 19px;                ;
         left: -10px;
         float: right;
     }
@@ -527,10 +588,8 @@ div.floatRight {
         margin-top: 1px;
         margin-bottom: 1px;
         box-shadow: none;
+        padding: 1rem;
     }
-
-    img {
-        display: none;}
 
     figcaption{
         text-align: left;
@@ -538,6 +597,15 @@ div.floatRight {
 
     div#skyline {
         border-radius: 0;
+    }
+
+    div.container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    section div.container{
+        margin: 0;
     }
 
     footer {display: none}
@@ -553,11 +621,38 @@ div.floatRight {
         height: auto;
     }
 
-    .clearFloatMedium {
-        clear: none;
+    .fotos{
+        max-width: 120px;
+        max-height: 120px;
     }
 
-}
+    div.floatRight ul li{
+        padding-left: .1rem;
+        padding-right: .1rem;
+    }
+
+    div.floatRight ul{
+        padding-right: 0;
+    }
+
+    img.imgklein {
+        display: none;
+    }
+
+    div.floatRight {
+        float: left;
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    /*.fotos {*/
+    /*    max-width: 130px;*/
+    /*    height: 130px ;*/
+
+    }
+
+
+
 
 @media print{
 

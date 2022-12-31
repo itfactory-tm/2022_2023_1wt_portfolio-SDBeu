@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studentenhuis Italia | Studios</title>
+    <title>Studentenhuis Italia | Kamers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
           content="Studentlife Italia heeft naast 24 studentenkoten ook 4 studios met een oppervlakte van 30 m².
 Elke studio is bemeubeld, heeft eigen sanitair en is voorzien van een eigen mini-keuken. Zo geniet je maximaal van je privacy!">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/all.css" media="all">
     <link rel="shortcut icon" href="pictures/favicon.png" type="image/x-icon">
 
@@ -29,7 +31,7 @@ Elke studio is bemeubeld, heeft eigen sanitair en is voorzien van een eigen mini
         <h2>Navigatie</h2>
         <ul >
             <li><a href="index.html"> Home</a></li>
-            <li class="active"><a href="kamers.html">Kamers</a></li>
+            <li class="actieve"><a href="kamers.html">Kamers</a></li>
             <li><a href="studios.html">Studios</a></li>
             <li><a href="gemeenschappelijke.html">Gemeenschappelijke ruimtes</a></li>
             <li><a href="locatie.html">Locatie</a></li>
@@ -37,7 +39,7 @@ Elke studio is bemeubeld, heeft eigen sanitair en is voorzien van een eigen mini
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-        <section><h2>Onze kamers</h2>
+        <section><h2><i class="fa-solid fa-house"></i> Onze kamers</h2>
 
             <a href="#foto" title="Foto's">
                 <p><img
@@ -55,7 +57,7 @@ Elke studio is bemeubeld, heeft eigen sanitair en is voorzien van een eigen mini
             </div>
            
 
-            <p>Studentlife Italia heeft 24 studentenkoten met een oppervlakte van 18 m². </p>
+            <p class="clearFloatMedium">Studentlife Italia heeft 24 studentenkoten met een oppervlakte van 18 m². </p>
             <p>Per verdieping zijn er 4 kamers. </p>
              <p>Je bereikt deze met een snelle lift, maar met de trap kan ook natuurlijk. </p>
             <p class="clearFloat">Elke kamer is bemeubeld en heeft eigen sanitair. Zo geniet je zo lang je wil van je
@@ -222,18 +224,42 @@ Elke studio is bemeubeld, heeft eigen sanitair en is voorzien van een eigen mini
 
     <section><h2 class="printweg" id="foto">Foto's</h2>
 
-        <img class="kader foto" src="https://picsum.photos/id/20/200/300" alt="studentenkamer">
-        <img class="kader foto" src="https://picsum.photos/id/9/200/300" alt="studentenkamer">
-        <img class="kader foto" src="https://picsum.photos/id/42/200/300" alt="studentenkamer">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-4 d-none d-xl-block">
+                    <img src="pictures/kamers/kamerL.jpg" alt="kamer" class="fotosL">
+                </div>
+
+                <div class="col-md-12  col-xl-8">
+
+                    <div class="row justify-content-around">
+                  <img src="pictures/kamers/kamer.jpg" alt="kamer" class="fotos col-4">
+                            <img src="pictures/kamers/kamer1.jpg" alt="kamer1" class="fotos col-4">
+                            <img src="pictures/kamers/kamer2.jpg" alt="kamer2" class="fotos col-4">
+                        <img src="pictures/kamers/kamer3.jpg" alt="kamer3" class="fotos col-4">
+                            <img src="pictures/kamers/kamer4.jpg" alt="kamer4" class="fotos col-4">
+                            <img src="pictures/kamers/kamer5.jpg" alt="kamer5" class="fotos col-4">
+
+                 <img src="pictures/kamers/kamer6.jpg" alt="kamer6" class="fotos col-4" id="kamer6">
+                            <img src="pictures/kamers/kamer7.jpg" alt="kamer7" class="fotos col-4">
+                            <img src="pictures/kamers/kamer8.jpg" alt="kamer8" class="fotos col-4">
+
+                </div>
+
+            </div>
+        </div>
+        </div>
 
     </section>
-
 
 
     <section>
         <h2>Interesse?</h2>
         <span id="contact">Neem gerust contact met ons op!
-            <a title="mail" href="mailto:info@beuck.be"><span class ="printzichtbaar">Stuur een maitje naar info@beuck.be en we nemen snel contact met je op.</span><span class="mail"><i class="fa-solid fa-at"></i></span></a>
+            <a title="mail" href="mailto:info@beuck.be"><span class ="printzichtbaar">Stuur een mailtje naar info@beuck.be en we nemen snel contact met je op.</span><span class="mail"><i class="fa-solid fa-at"></i></span></a>
         </span>
     </section>
 
@@ -244,7 +270,7 @@ Elke studio is bemeubeld, heeft eigen sanitair en is voorzien van een eigen mini
         <p>2000 Antwerpen</p>
         <p>&copy; Stijn De Beuckeleer</p></footer>
 
-    <a class="printweg" href="#" title="and beyond">To the top</a>
+    <a class="printweg" href="#" title="and beyond">Naar boven</a>
 
 </main>
 
