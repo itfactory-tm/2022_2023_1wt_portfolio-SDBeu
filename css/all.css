@@ -17,6 +17,10 @@ nav a:visited{
     color: #613;
 }
 
+a:hover{
+    color: #88aa33;
+}
+
 html{
     font-size: 18px;}
 
@@ -133,6 +137,8 @@ section {
     background-position: right;
 }
 
+
+
 section a{
     color: #87a933;
 }
@@ -161,7 +167,6 @@ figure.groei{
     flex-grow: 2;
 }
 
-
 figcaption{
     text-align: justify;
 }
@@ -171,8 +176,6 @@ div#skyline {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-
-
     background-image: url(../pictures/voetgangersbrug.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -280,18 +283,14 @@ th i {
 
 
  ul{
-     padding-left: 1rem;
+     padding-left: .5rem;
  }
 
 li:hover{
     color: #a2968f;}
 
-td ul{
-    padding-left: 1rem;}
-
-
-td ul:first-child{
-    padding-top: .5rem;
+td {
+    padding: .5rem;
 }
 
 ul {
@@ -302,13 +301,13 @@ td li{
     padding-left: 1rem;
 }
 
-
 img.ei {
     background-color: #fdfdfd;
     border-radius: 50%;
     box-shadow: .2rem .3rem .6rem rgba(150, 150, 150, .5);
-    max-width: 100%;
-    height: auto;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     padding-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -318,17 +317,35 @@ img.ei {
     display: block;
 }
 
-.fotosL {
+.maxWidt100 {
     max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.fotosL {
+    width: auto;
+    height: 493px;
     margin: 0 auto;
     background-color: #fff;
     border: 3px inset #c7d99b;
     box-shadow: 2px 2px 5px 0 #666;
+    filter: drop-shadow(.5rem .5rem 5px rgba(0, 0, 0, .7));
 }
 
+.fotosT {
+    width: 516px;
+    object-fit: cover;
+    background-color: #fff;
+    border: 3px inset #c7d99b;
+    box-shadow: 2px 2px 5px 0 #666;
+    padding: 0;
+    filter: drop-shadow(.5rem .5rem 5px rgba(0, 0, 0, .7));
+}
 
 .fotos {
-    max-width: 150px;
+    width: 150px;
     height: 150px ;
     object-fit: cover;
     padding:1rem;
@@ -336,21 +353,66 @@ img.ei {
     background-color: #fff;
     border: 3px inset #c7d99b;
     box-shadow: 2px 2px 5px 0 #666;
-    filter: grayscale(80%);
+    filter: grayscale(80%) drop-shadow(.5rem .5rem 5px rgba(0, 0, 0, .7));
 }
 
 .fotos:hover {
-    /*max-width: 160px;*/
-    /*height: 160px;*/
-    /*object-fit: cover; */
+    object-fit: cover;
     filter: grayscale(0%);
-    /*transition-duration: 1s;*/
+    transition-duration: 1s;
     border: 3px inset #f65a03;
 }
+
+#locatieHoofdfoto{
+    width: 50vw;
+    height: auto;
+    object-fit: cover;
+    filter: sepia(100%);
+    transition: 1s;
+}
+
+.fotosLocatie{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition: 3s ease;
+}
+
 
 #kamer6 {
     object-fit: cover;
     object-position: top center;
+}
+
+.buurt2 {
+    background-image: url(../pictures/buurt/buurt2.jpg);
+    background-position: bottom center;
+    width: 300px;
+    height: 200px;
+    margin: 1rem;
+    padding-left: 0;
+    overflow: hidden;
+  }
+
+.buurt4 {
+    background-image: url(../pictures/buurt/buurt4.jpg);
+    background-position: center center;
+    width: 300px;
+    height: 200px;
+    padding-left: 0;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+
+img.fotosLocatie:hover{
+    opacity: 0;
+
+}
+
+img#locatieHoofdfoto:hover{
+    filter:unset;
+    transition: 3s ease-in-out;
 }
 
 h1 {
@@ -372,8 +434,13 @@ h1 {
     top:57px;
     left: 880px;
     background-color: #fff;
+    transition: 3s ease-in-out;
     }
 
+img#muts:hover{
+    transform: rotate(-45deg) !important;
+    background-color: #87a933;
+}
 
 .kader {
     border: 1px solid rgba(23, 22, 22, .5);
@@ -386,18 +453,40 @@ h1 {
     margin: 0;
     outline: none;}
 
+
+.kaderDropShadow{
+    border: 3px inset #c7d99b;
+    box-shadow: 2px 2px 5px 0 #666;
+    filter: drop-shadow(.5rem .5rem 5px rgba(0, 0, 0, .7));
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+.googleMap{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    background-color: #87a933;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0;
+    outline: none;}
+
+
 .accent{
     font-weight: bold;
     color: #ea6737;
 }
 
 .imgklein{
-       max-width: 43%;
-       height: auto;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
+       width: 200px;
+       height: 125px    ;
+        object-fit: cover;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    border: solid;
+    color: #87a933;
     }
-
 
 .floatLeft{
     float: left;
@@ -410,8 +499,21 @@ h1 {
 .printzichtbaar{
     display: none;}
 
+.justifyTxt {
+    text-align: justify;
+}
+
+div.gemeenschap p{
+    text-align: justify;
+}
+
+img.gemeenschap {
+    border-style: solid;}
+
+
 p{line-height: 1.5rem;
     margin: .5rem;}
+
 
 footer{
     font-weight: bold;
@@ -470,6 +572,8 @@ div.floatRight ul li:first-child {
     align-items: center;
 }
 
+
+
 .mail{
     display: block;
     margin-left: 2rem;
@@ -492,8 +596,10 @@ div.floatRight ul li:first-child {
     font-weight: bold;
 }
 
+
+
 /*Medium*/
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
 
     body{
         background:
@@ -507,7 +613,6 @@ div.floatRight ul li:first-child {
         }
 
 
-
     figure{
         display: inline-block;
         width: 100%;
@@ -519,8 +624,18 @@ div.floatRight ul li:first-child {
     html{
         font-size: 16px;}
 
+    iframe{
+        width: 380px;
+        height: 236px;
+    }
+
     .clearFloatMedium {
         clear: both;
+    }
+
+    .fotos{
+        width: 120px;
+        height: 120px;
     }
 
 
@@ -538,14 +653,13 @@ div.floatRight ul li:first-child {
         left: 93%;
     }
 
-
 }
 
 
 @media (max-width: 660px) {
     .fotos{
-        max-width: 130px;
-        max-height: 130px;
+        width: 100px;
+        height: 100px;
     }
 
     section{
@@ -602,7 +716,7 @@ div.floatRight ul li:first-child {
     div.container{
         margin-left: 0;
         margin-right: 0;
-    }
+            }
 
     section div.container{
         margin: 0;
@@ -615,6 +729,11 @@ div.floatRight ul li:first-child {
         border-bottom: 0;
     }
 
+    iframe{
+        width: 303px;
+        height: 189px;
+    }
+
     .foto{
         display: inline;
         width: 25%;
@@ -624,6 +743,18 @@ div.floatRight ul li:first-child {
     .fotos{
         max-width: 120px;
         max-height: 120px;
+    }
+
+    .googleMap{
+        padding: .5rem;
+        width:  300px;
+        height: 200px;
+    }
+
+    img.maxWidt100 {
+        display: block;
+        width: 50%;
+        height: auto;
     }
 
     div.floatRight ul li{
@@ -645,18 +776,14 @@ div.floatRight ul li:first-child {
         max-width: 100%;
     }
 
-    /*.fotos {*/
-    /*    max-width: 130px;*/
-    /*    height: 130px ;*/
 
     }
 
 
 
-
 @media print{
 
-    section, main, body, figure{
+    section, main, body, figure {
         height: unset;
         overflow: unset;
         border: unset;
@@ -671,12 +798,21 @@ div.floatRight ul li:first-child {
     nav, footer, div#skyline, img, .printweg, .mail{
         display: none;}
 
+    img.ei{
+        display: none;
+    }
     .bezet{
         display: none;
+    }
+
+    .container{
+        padding: 0;
+        margin: 0;
     }
     
     #contact{
         display: block;}
+
     .printzichtbaar {
         display: inline-block;
         color: #000;}
