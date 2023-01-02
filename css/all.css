@@ -438,8 +438,8 @@ h1 {
     }
 
 img#muts:hover{
-    transform: rotate(-45deg) !important;
-    background-color: #87a933;
+    transform: rotate(45deg);
+    background-color: #c7d99b;
 }
 
 .kader {
@@ -485,7 +485,7 @@ img#muts:hover{
         margin-right: 1rem;
         margin-bottom: 1rem;
     border: solid;
-    color: #87a933;
+    color: #c7d99b;
     }
 
 .floatLeft{
@@ -696,6 +696,13 @@ div.floatRight ul li:first-child {
         float: right;
     }
 
+
+    img#muts:hover{
+        transform: rotate(-45deg);
+        background-color: #c7d99b;
+    }
+
+
     section {
         margin-left: 0;
         margin-right: 0;
@@ -795,19 +802,28 @@ div.floatRight ul li:first-child {
         text-align: left;
     }
 
-    nav, footer, div#skyline, img, .printweg, .mail{
+    nav, footer, div#skyline, img,.printweg, .mail    {
         display: none;}
 
+    i.floatRight{
+        display: none;
+    }
+
+    #muts{
+        top:0rem;
+    }
     img.ei{
         display: none;
     }
-    .bezet{
+    .bezet {
         display: none;
     }
 
-    .container{
-        padding: 0;
-        margin: 0;
+
+
+    div.container  {
+        padding: 0 ;
+        margin: 0 ;
     }
     
     #contact{
