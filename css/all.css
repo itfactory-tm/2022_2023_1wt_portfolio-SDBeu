@@ -605,7 +605,6 @@ div.floatRight ul li:first-child {
     align-items: center;
 }
 
-
 .mail {
     display: block;
     margin-left: 2rem;
@@ -685,7 +684,6 @@ div.floatRight ul li:first-child {
         top: 50px;
         left: 93%;
     }
-
 }
 
 
@@ -828,66 +826,62 @@ div.floatRight ul li:first-child {
     #locatieHoofdfoto {
         width: 300px;
         height: auto;
-
-
-    }
-
-
-    @media print {
-
-        section, main, body, figure {
-            height: unset;
-            overflow: unset;
-            border: unset;
-            border-radius: unset;
-            box-shadow: unset;
-            margin: 1rem;
-            padding: 0;
-            color: black;
-            text-align: left;
-        }
-
-        nav, footer, div#skyline, img, .printweg, .mail {
-            display: none;
-        }
-
-        i.floatRight {
-            display: none;
-        }
-
-        #muts {
-            top: 0;
-        }
-
-        img.ei {
-            display: none;
-        }
-
-        img.gemeenschap {
-            display: unset;
-        }
-
-        .bezet {
-            display: none;
-        }
-
-
-        div.container {
-            padding: 0;
-            margin: 0;
-        }
-
-        #contact {
-            display: block;
-        }
-
-        .printzichtbaar {
-            display: inline-block;
-            color: #000;
-        }
-
-        .clearFloatMedium {
-            clear: unset;
-        }
     }
 }
+
+@media print {
+    section, main, body, figure {
+        height: unset;
+        overflow: unset;
+        border: unset;
+        border-radius: unset;
+        box-shadow: unset;
+        margin: 1rem;
+        padding: 0;
+        color: black;
+        text-align: left;
+    }
+
+    nav, footer, div#skyline, img, .printweg, .mail {
+        display: none;
+    }
+
+    i.floatRight {
+        display: none;
+    }
+
+    #muts {
+        top: 0;
+    }
+
+    img.ei {
+        display: none;
+    }
+
+    /*img.gemeenschap {*/
+    /*    display: unset;*/
+    /*}*/
+    .bezet {
+        display: none;
+    }
+
+    div.container {
+        padding: 0;
+        margin: 0;
+    }
+
+    #contact {
+        display: block;
+    }
+
+    .printzichtbaar {
+        display: inline-block;
+        color: #000;
+    }
+
+    .clearFloatMedium {
+        clear: unset;
+    }
+}
+
+

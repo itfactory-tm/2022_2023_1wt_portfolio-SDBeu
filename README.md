@@ -11,7 +11,7 @@
 | Name            | stijn de beuckeleer                                                     |
 | email           | [r0939822@student.thomasmore.be](mailto:r0939822@student.thomasmore.be) |
 | Github Username | SDBeu                                                                   |
-| Hosting         | [https://yourdomain.netlify.app](https://yourdomain.netlify.app)        |
+| Hosting         | [https://studentlife-italia.netlify.app/](https://studentlife-italia.netlify.app/)        |
 
 ## Installatie
 

@@ -21,7 +21,9 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url("/pictures/lift.jpg");
+    background-image: url("/pictures/aap.png");
+    background-repeat: no-repeat;
+
 }
 
 h1 {
