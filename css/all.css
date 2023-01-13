@@ -707,7 +707,7 @@ div.floatRight ul li:first-child {
 
     body {
         font-family: Consolas, Monaco, sans-serif;
-        min-width: 420px;
+        /*min-width: 420px;*/
     }
 
     main {
