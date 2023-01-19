@@ -173,12 +173,13 @@ figure {
     outline-offset: -1rem;
 }
 
-figure.groei {
-    flex-grow: 2;
-}
+/*figure.groei {*/
+/*    flex-grow: 2;*/
+/*}*/
 
 figcaption {
     text-align: justify;
+    padding: 1rem;
 }
 
 div#skyline {
@@ -670,6 +671,11 @@ div.floatRight ul li:first-child {
         height: 120px;
     }
 
+    figcaption {
+        text-align: justify;
+        max-width: 350px;
+    }
+
 
     #muts {
         display: inline-block;
@@ -686,17 +692,6 @@ div.floatRight ul li:first-child {
     }
 }
 
-
-@media (max-width: 660px) {
-    .fotos {
-        width: 100px;
-        height: 100px;
-    }
-
-    section {
-        margin-right: 0;
-    }
-}
 
 /*klein*/
 @media (max-width: 576px) {
@@ -749,7 +744,8 @@ div.floatRight ul li:first-child {
     }
 
     figcaption {
-        text-align: left;
+        text-align: justify;
+        max-width: 350px;
     }
 
     div#skyline {
@@ -831,6 +827,10 @@ div.floatRight ul li:first-child {
     img.ei{
         outline: unset;
     }
+
+    td li{
+        padding: 0;
+    }
 }
 
 @media print {
@@ -860,6 +860,7 @@ div.floatRight ul li:first-child {
 
     img.ei {
         display: none;
+
     }
 
     /*img.gemeenschap {*/

@@ -49,7 +49,7 @@ h2 {
     transform: translateY(-2.5rem);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 400px) {
     h1 {
         font-size: 9rem;
     }
@@ -58,9 +58,6 @@ h2 {
         font-size: 1.5rem;
         transform: translateY(-4rem);
     }
-
-
-
 
 }
 
