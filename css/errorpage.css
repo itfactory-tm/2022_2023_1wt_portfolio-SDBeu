@@ -12,8 +12,6 @@ html {
 
 body {
     font-family: 'Roboto Slab', sans-serif;
-    /*background-color: #87a933;*/
-    /*background: linear-gradient(to bottom right, #333538, rgba(105, 97, 97, 0.3));*/
     color: #c0561b;
     height: 100vh;
     display: flex;
@@ -21,10 +19,12 @@ body {
     align-items: flex-end;
     justify-content: center;
     text-align: center;
+    background-color: #fbfbfb;
     background-image: url("/pictures/aap_mid.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left top;
+    background-attachment: fixed;
 }
 
 main{
@@ -32,6 +32,8 @@ main{
     flex-direction: column;
     align-items: center;
 }
+
+
 
 h1 {
     font-size: 6rem;
@@ -51,30 +53,30 @@ h2 {
 
 @media screen and (min-width: 400px) {
     h1 {
-        font-size: 9rem;
+        font-size: 8rem;
     }
 
     h2 {
         font-size: 1.5rem;
-        transform: translateY(-4rem);
+        transform: translateY(-3rem);
     }
 
 }
 
 @media screen and (min-width: 800px) {
     h1 {
-        font-size: 15rem;
+        font-size: 8rem;
     }
 
     h2 {
         font-size: 2.2rem;
-        transform: translateY(-6rem);
+        transform: translateY(-3rem);
     }
 
 
 
     body{
-        background-image: url("/pictures/aap.jpg");
+        background-image: url("/pictures/aap.png");
     }
 
 }

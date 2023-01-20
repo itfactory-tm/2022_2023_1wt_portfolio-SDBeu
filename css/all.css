@@ -106,12 +106,11 @@ nav li {
 
 nav a {
     flex: 1 1 auto;
-    /*text-align: center;*/
+
 }
 
 nav li:hover {
     background-color: #b4c290;
-    /*border-radius: 0.5rem;*/
     border: none;
 }
 
@@ -125,7 +124,7 @@ nav li.actieve:hover {
 
 nav li.actieve a {
     text-decoration: none;
-    /*text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);*/
+
 }
 
 nav li.actieve a:hover {
@@ -153,9 +152,7 @@ section a {
     color: #87a933;
 }
 
-div.containerStijn {
-    display: flex;
-}
+
 
 figure {
     display: flex;
@@ -173,9 +170,6 @@ figure {
     outline-offset: -1rem;
 }
 
-/*figure.groei {*/
-/*    flex-grow: 2;*/
-/*}*/
 
 figcaption {
     text-align: justify;
@@ -863,9 +857,9 @@ div.floatRight ul li:first-child {
 
     }
 
-    /*img.gemeenschap {*/
-    /*    display: unset;*/
-    /*}*/
+    img.gemeenschap {
+        display: unset;
+    }
     .bezet {
         display: none;
     }
@@ -887,6 +881,12 @@ div.floatRight ul li:first-child {
     .clearFloatMedium {
         clear: unset;
     }
-}
+
+    figcaption {
+        text-align: justify;
+        max-width: unset;
+    }
+    }
+
 
 
